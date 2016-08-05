@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Raw GPS</string>
+
+    <string name="latitude">Latitude</string>
+    <string name="longtitude">Longtitude</string>
+    <string name="loading">loading</string>
+    <string name="provider">Provider</string>
+    <string name="altitude">Altitude</string>
+</resources>
