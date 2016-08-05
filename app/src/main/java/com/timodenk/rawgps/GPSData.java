@@ -1,13 +1,10 @@
 package com.timodenk.rawgps;
 
-import android.Manifest;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.util.Log;
 
 public class GPSData implements LocationListener {
     private MainActivity ui;
@@ -24,19 +21,17 @@ public class GPSData implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        double lat = location.getLatitude(), lng = location.getLongitude(), altitude = location.getAltitude();
-        ui.setLatLng(lat, lng);
-        ui.setAltitude(altitude);
+        ui.updateLocationInformation(location);
     }
 
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
-        ui.setLocationProvider(provider);
+
     }
 
     @Override
     public void onProviderEnabled(String provider) {
-        ui.setLocationProvider(provider);
+
     }
 
     @Override

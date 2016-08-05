@@ -5,82 +5,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tableLayoutMainTable">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:text="@string/latitude"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewLatLabel"
-                android:layout_marginRight="@dimen/table_cellpadding" />
-
-            <TextView android:text="@string/loading" android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewLatValue" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:text="@string/longtitude"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewLngLabel"
-                android:layout_marginRight="@dimen/table_cellpadding" />
-
-            <TextView
-                android:text="@string/loading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewLngValue" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="@string/altitude"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textviewAltLabel"
-                android:layout_marginRight="@dimen/table_cellpadding" />
-
-            <TextView
-                android:text="@string/loading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewAltValue" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="@string/provider"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewProviderLabel"
-                android:layout_marginRight="@dimen/table_cellpadding" />
-
-            <TextView
-                android:text="@string/loading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewProviderValue" />
-        </TableRow>
-
-    </TableLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewMain" />
 
 </RelativeLayout>
